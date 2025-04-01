@@ -10,3 +10,6 @@ Answer: C
 
 <img width="654" alt="Screenshot 2025-04-01 at 10 03 02 AM" src="https://github.com/user-attachments/assets/6b8d8174-e948-48cc-aaf4-e352952b5bc4" />
 Answer: E (direction matters here)
+
+<img width="605" alt="Screenshot 2025-04-01 at 10 12 22 AM" src="https://github.com/user-attachments/assets/a3d949c2-6210-489e-955d-012ed1e7abaa" />
+Answer: B (No)
