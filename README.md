@@ -7,3 +7,6 @@ Answer: C (it returns in pairs)
 
 <img width="572" alt="Screenshot 2025-04-01 at 9 50 32 AM" src="https://github.com/user-attachments/assets/3965ebc4-70ea-4ff3-9662-0104459820d9" />
 Answer: C 
+
+<img width="654" alt="Screenshot 2025-04-01 at 10 03 02 AM" src="https://github.com/user-attachments/assets/6b8d8174-e948-48cc-aaf4-e352952b5bc4" />
+Answer: E (direction matters here)
