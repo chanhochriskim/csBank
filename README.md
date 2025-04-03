@@ -22,3 +22,7 @@ Answer: C
 
 <img width="600" alt="Screenshot 2025-04-03 at 9 45 33 AM" src="https://github.com/user-attachments/assets/8ca58797-0348-4008-8b93-39988483c8de" />
 Answer: C
+
+<img width="677" alt="Screenshot 2025-04-03 at 10 05 29 AM" src="https://github.com/user-attachments/assets/ebb63a3a-2a52-4b8c-aac4-3ee657a006c3" />
+Answer: D
+
