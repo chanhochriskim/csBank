@@ -2,6 +2,7 @@
 questions 
 
 Apr 1 (Wk 12, Tue) -- Neo4J Slides
+-
 <img width="418" alt="Screenshot 2025-04-01 at 9 31 10 AM" src="https://github.com/user-attachments/assets/22da8428-feb8-4175-8060-67242d5f8056" />
 Answer: C (it returns in pairs)
 
@@ -13,3 +14,8 @@ Answer: E (direction matters here)
 
 <img width="605" alt="Screenshot 2025-04-01 at 10 12 22 AM" src="https://github.com/user-attachments/assets/a3d949c2-6210-489e-955d-012ed1e7abaa" />
 Answer: B (No)
+
+Apr 3 (Wk 12, Thu)
+-
+<img width="601" alt="Screenshot 2025-04-03 at 9 17 34 AM" src="https://github.com/user-attachments/assets/781756bf-53b9-4b7c-96e7-1a7a9493dcff" />
+Answer: C
