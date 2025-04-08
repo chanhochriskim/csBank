@@ -26,3 +26,13 @@ Answer: C
 <img width="677" alt="Screenshot 2025-04-03 at 10 05 29 AM" src="https://github.com/user-attachments/assets/ebb63a3a-2a52-4b8c-aac4-3ee657a006c3" />
 Answer: D
 
+Apr 8 (Wk 13, Tue)
+-
+<img width="458" alt="Screenshot 2025-04-08 at 11 49 30 AM" src="https://github.com/user-attachments/assets/9f2abeb5-91e4-41f9-b1d1-06efc12ce977" />
+
+<img width="404" alt="Screenshot 2025-04-08 at 11 49 43 AM" src="https://github.com/user-attachments/assets/8cb45554-6977-4536-9ec2-a50996c85774" />
+
+
+
+
+
