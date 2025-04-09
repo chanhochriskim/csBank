@@ -1,5 +1,4 @@
-# cs348questions
-questions 
+# cs348 in class quizzes
 
 Apr 1 (Wk 12, Tue) -- Neo4J Slides
 -
