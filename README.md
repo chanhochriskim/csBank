@@ -35,5 +35,6 @@ Apr 10 (Wk 13, Thu)
 -
 <img width="465" alt="Screenshot 2025-04-10 at 9 08 29 AM" src="https://github.com/user-attachments/assets/b53bc804-0314-4f2f-9f2a-25d52de3b7e1" />
 Answer: A
-
+<img width="581" alt="Screenshot 2025-04-10 at 9 37 50 AM" src="https://github.com/user-attachments/assets/4dc4956b-68f4-4488-9b2b-04b6540e2af9" />
+Answer: 
 
