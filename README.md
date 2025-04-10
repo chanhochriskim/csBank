@@ -31,7 +31,9 @@ Apr 8 (Wk 13, Tue)
 
 <img width="404" alt="Screenshot 2025-04-08 at 11 49 43 AM" src="https://github.com/user-attachments/assets/8cb45554-6977-4536-9ec2-a50996c85774" />
 
-
-
+Apr 10 (Wk 13, Thu)
+-
+<img width="465" alt="Screenshot 2025-04-10 at 9 08 29 AM" src="https://github.com/user-attachments/assets/b53bc804-0314-4f2f-9f2a-25d52de3b7e1" />
+Answer: A
 
 
