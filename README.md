@@ -37,4 +37,6 @@ Apr 10 (Wk 13, Thu)
 Answer: A
 <img width="581" alt="Screenshot 2025-04-10 at 9 37 50 AM" src="https://github.com/user-attachments/assets/4dc4956b-68f4-4488-9b2b-04b6540e2af9" />
 Answer: Only B works
+<img width="594" alt="Screenshot 2025-04-10 at 10 09 18 AM" src="https://github.com/user-attachments/assets/27af08c9-5793-4774-b4b9-3a0680248dec" />
+Answer: B 
 
