@@ -48,3 +48,6 @@ Answer: A
 Answer: C 
 <img width="659" alt="Screenshot 2025-04-17 at 9 57 15 AM" src="https://github.com/user-attachments/assets/ddbc5d69-b81f-4a47-ba22-7db40fe0c7b0" />
 Answer: B
+<img width="608" alt="Screenshot 2025-04-17 at 10 11 45 AM" src="https://github.com/user-attachments/assets/c0297b1d-9239-44d7-9e8e-ef78af89d38a" />
+Answer: B
+
