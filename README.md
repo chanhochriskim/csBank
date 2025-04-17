@@ -44,3 +44,7 @@ Apr 17 (Wk 14, Thu)
 - 
 <img width="579" alt="Screenshot 2025-04-17 at 9 25 29 AM" src="https://github.com/user-attachments/assets/6ddcc697-344e-4f93-a075-a310ecff211c" />
 Answer: A 
+<img width="641" alt="Screenshot 2025-04-17 at 9 40 09 AM" src="https://github.com/user-attachments/assets/205e388e-3b0a-4254-affd-57461f2456bf" />
+Answer: 
+
+
