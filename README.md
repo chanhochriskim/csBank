@@ -40,3 +40,7 @@ Answer: Only B works
 <img width="594" alt="Screenshot 2025-04-10 at 10 09 18 AM" src="https://github.com/user-attachments/assets/27af08c9-5793-4774-b4b9-3a0680248dec" />
 Answer: A
 
+Apr 17 (Wk 14, Thu)
+- 
+<img width="579" alt="Screenshot 2025-04-17 at 9 25 29 AM" src="https://github.com/user-attachments/assets/6ddcc697-344e-4f93-a075-a310ecff211c" />
+Answer: A 
