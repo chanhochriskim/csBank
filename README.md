@@ -55,5 +55,8 @@ Apr 22 (wk 15, Tue)
 - 
 <img width="676" alt="Screenshot 2025-04-22 at 9 14 13 AM" src="https://github.com/user-attachments/assets/f846ec43-c82d-47a4-8c35-f90069317224" />
 Answer: A 
+<img width="392" alt="Screenshot 2025-04-22 at 9 45 18 AM" src="https://github.com/user-attachments/assets/77d20756-be60-49b1-958d-ac8b64f614fb" />
+Answer: d
+
 
 
