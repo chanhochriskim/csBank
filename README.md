@@ -59,5 +59,8 @@ Answer: A
 Answer: d
 <img width="617" alt="Screenshot 2025-04-22 at 9 49 00 AM" src="https://github.com/user-attachments/assets/801a260b-b65f-43d9-9f46-f271b79ff978" />
 Answer: 1,000 (B)
+<img width="627" alt="Screenshot 2025-04-22 at 9 52 48 AM" src="https://github.com/user-attachments/assets/7d6986d0-0143-46c6-bd66-820daac1fa42" />
+Answer: A
+
 
 
