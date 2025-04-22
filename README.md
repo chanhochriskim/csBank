@@ -51,3 +51,9 @@ Answer: B
 <img width="608" alt="Screenshot 2025-04-17 at 10 11 45 AM" src="https://github.com/user-attachments/assets/c0297b1d-9239-44d7-9e8e-ef78af89d38a" />
 Answer: B
 
+Apr 22 (wk 15, Tue)
+- 
+<img width="676" alt="Screenshot 2025-04-22 at 9 14 13 AM" src="https://github.com/user-attachments/assets/f846ec43-c82d-47a4-8c35-f90069317224" />
+Answer: A 
+
+
