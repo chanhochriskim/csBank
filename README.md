@@ -62,5 +62,10 @@ Answer: 1,000 (B)
 <img width="627" alt="Screenshot 2025-04-22 at 9 52 48 AM" src="https://github.com/user-attachments/assets/7d6986d0-0143-46c6-bd66-820daac1fa42" />
 Answer: A
 
+Apr 24 (wk 15, thu)
+- 
+<img width="665" alt="Screenshot 2025-04-24 at 10 07 49 AM" src="https://github.com/user-attachments/assets/513f1661-19bc-4e0c-929f-04a7490e40ea" />
+answer: 2nf
+
 
 
