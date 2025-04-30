@@ -270,8 +270,8 @@ void processHTTPRequest(int clientSocket) {
         postData[received] = '\0'; 
     }
 
-    // checking for basic http authorization. (christiankim:googoogaagaa)
-    const char* validAuth = "Authorization: Basic Y2hyaXN0aWFua2ltOmdvb2dvb2dhYWdhYQ==";
+    // checking for basic http authorization. 
+    const char* validAuth = "Authorization: Basic xx==";
     if (strstr(buffer, validAuth) == NULL) {
         // if missing / invalid, 401 error.
         const char* unahtorizedResponse =
