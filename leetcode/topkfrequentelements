@@ -1,0 +1,26 @@
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+        int[] ans = new int[k]; 
+        HashMap<Integer, Integer> map = new HashMap();
+        // hashmap --> 1:3, 2:2, 3:1. we need 2. --> 1, 2. 
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i])) {
+                map.put(nums[i], map.get(nums[i]) + 1);
+            } else {
+                map.put(nums[i], 1);
+            }
+        }
+
+        List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
+        list.sort(Map.Entry.comparingByValue()); // 3, 2, 1 accordingly.
+
+        int x = 0;
+        for (int i = list.size() - 1; i >= list.size() - k; i--) {
+            ans[x] = list.get(i).getKey();
+            x++;
+        }
+        return ans;
+    }
+}
+
+// very ineffieicent lmao
