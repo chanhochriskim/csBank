@@ -18,3 +18,26 @@
 }" // my brute force way of solving it O(n^2), which isnt optimal. 
 
 // here is the optimized two pointer approach. 
+class Solution {
+    public int maxArea(int[] height) {
+        if (height.length == 0) return 0;
+        int left = 0;
+        int right = height.length - 1;
+        int h = 0;
+        int length = 0;
+        int result = 0;
+        while (left < right) {
+            h = Math.min(height[left], height[right]);
+            length = right - left;
+            result = Math.max(h * length, result);
+
+            if (height[left] < height[right]) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+
+        return result;
+    }
+}
