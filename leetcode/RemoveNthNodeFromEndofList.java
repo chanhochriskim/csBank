@@ -1,3 +1,6 @@
+// took 30:52. needed "if (n == length) return head.next; // in case n == length, get rid of head.next." line for passing every edge case.
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
