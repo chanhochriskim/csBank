@@ -1,4 +1,4 @@
-# cs348 in class quizzes + 252 webserver implementation
+# cs348 in class quizzes / 252 webserver implementation
 
 Apr 1 (Wk 12, Tue) - Neo4J Slides
 -
