@@ -39,3 +39,27 @@ class Solution {
 
 
 // --> right way using DFS with backtracking.
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> ans = new ArrayList();
+        backtrack(candidates, target, 0, new ArrayList(), ans); 
+        return ans;
+    }
+
+    public void backtrack(int[] candidates, int target, int start, List<Integer> current, List<List<Integer>> result) {
+        if (target == 0) {
+            // we found one.
+            result.add(new ArrayList<>(current)); // add it to result.
+            return; 
+        }
+        if (target < 0) {
+            return; // wrong value.
+        }
+
+        for (int i = start; i < candidates.length; i++) {
+            current.add(candidates[i]); 
+            backtrack(candidates, target - candidates[i], i, current, result);
+            current.remove(current.size() - 1); // backtrck (get rid of the last one)
+        }
+    }
+}
