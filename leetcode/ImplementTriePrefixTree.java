@@ -1,5 +1,6 @@
 // jul 19 2025 (coffeeBean cafe) -- took ~23:15. i was trynna do trie root, but didnt work.
 // instead, there's this thing called 'this', which i could replace root with it then resolved the issue.
+// jul 20 2025 -- reviewed!
 
 /**
  * Your Trie object will be instantiated and called as such:
