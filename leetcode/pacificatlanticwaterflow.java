@@ -1,4 +1,4 @@
-// used chat for a bit but man it was fun.
+// used chat for a bit but man it was fun. reveiewed
 
 class Solution {
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
