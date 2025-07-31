@@ -27,4 +27,8 @@ class Solution:
             if not dfs(crs): return False
 
         return True
+
+
+# review sesh (on my own)
+--> still not really used to python. gotta practice more. dfs part need a bit more to review for understanding.
             
