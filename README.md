@@ -1,3 +1,24 @@
+# Blind75 Ultimate Guide
+currently solved ones: 37. 
+today's date: Aug 5
+school starts: Aug 25
+2x a day = ~ 40.
+min goal = 30.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # cs348 in class quizzes / 252 webserver implementation
 
 Apr 1 (Wk 12, Tue) - Neo4J Slides
