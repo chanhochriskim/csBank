@@ -5,6 +5,10 @@ school starts: Aug 25
 2x a day = ~ 40.
 min goal = 30.
 
+# Steps
+1. re-do all the problems on the list (interview setting, timer 30m, if cooked, solution.) 
+2. if review is needed, mark as star (blind 75: https://neetcode.io/practice?tab=blind75)
+3. again, min goal = at least 30
 
 
 
