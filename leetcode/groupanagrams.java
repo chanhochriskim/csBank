@@ -21,3 +21,28 @@ class Solution {
         return new ArrayList<>(map.values());
     }
 }
+
+// aug 6 (new trial) --> everything was fine except that i didn't know how to do a proper return new arraylist<>(map.values()) part.
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        HashMap<String, List<String>> map = new HashMap();
+
+        char[] charArray;
+        for (String str : strs) {
+            charArray = str.toCharArray(); 
+            Arrays.sort(charArray); 
+            String sorted = String.valueOf(charArray); // now sorted [eat -> aet]
+
+            // if that key doesn't exist, make a new list
+            if (!map.containsKey(sorted)) { 
+                map.put(sorted, new ArrayList<String>());
+                map.get(sorted).add(str);
+            } else {
+                map.get(sorted).add(str);
+            }
+        }        
+        // map.values() --> all work properly.
+
+        return new ArrayList(map.values());
+    }
+}
