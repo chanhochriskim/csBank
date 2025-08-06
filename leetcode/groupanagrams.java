@@ -46,3 +46,21 @@ class Solution {
         return new ArrayList(map.values());
     }
 }
+
+// aug 6 python ver. THIS EASY AND SIMPLE WHAT??
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # dictionary (auto-creates empty lists)
+        anagram_map = defaultdict(list) 
+
+        # loop (each word in input list)
+        for word in strs:
+            # sort string to form a key
+            sorted_val = ''.join(sorted(word)) # '' join means no separater
+
+            # append original word to correct group
+            anagram_map[sorted_val].append(word)
+        
+        return list(anagram_map.values())
+
+        
