@@ -25,4 +25,33 @@ class Solution {
 
 // very ineffieicent lmao
 
-// aug 9 (redoing it) java
+// aug 9 (redoing it) java (lowkey struggled with the last half. --> why we loop from the back tho 
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+        int[] ans = new int[k];
+        if (nums.length == 0) return ans;
+        Map<Integer, Integer> map = new HashMap();
+
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i])) {
+                map.put(nums[i], map.get(nums[i]) + 1);
+            } else {
+                // map doesn't contain the key. start with 1.
+                map.put(nums[i], 1);
+            }
+        }
+
+        // using list --> make the map to be sorted in reverse (3, 2, 1)
+        List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
+        list.sort(Map.Entry.comparingByValue());
+        // start from the 
+        int idx = 0;
+        for (int j = list.size() - 1; j >= list.size() - k; j--) {
+            ans[idx] = list.get(j).getKey();
+            idx++;
+        }
+
+
+        return ans;
+    }
+}
