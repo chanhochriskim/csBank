@@ -35,3 +35,25 @@ class Solution {
         return ans;
     }
 }
+
+// aug 16 -- 4:40 ~ 5:00 --> attempted without looking at the solution. (didn't use two pointers zamn)
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        // i = -4. if any other matches with formula, if set doesn't contain it, add it.
+        // formula: i + ((i + 1) + (i + x)) == 0. 
+        // loop until nums.size - 2. [-1, -1, 2] [-1, 0, 1]
+        List<List<Integer>> ans = new ArrayList();
+        Arrays.sort(nums); // sorted: -4 -1 -1 0 1 2. 
+        Set<List<Integer>> set = new HashSet();
+
+        for (int i = 0; i < nums.length - 2; i++) { // first pointer = i + 1
+            for (int j = i + 2; j < nums.length; j++) { // second pointer 
+                if ((nums[i] + nums[i+1] + nums[j] == 0) && !set.contains(Arrays.asList(nums[i], nums[i + 1], nums[j]))) {
+                    set.add(Arrays.asList(nums[i], nums[i + 1], nums[j]));
+                    ans.add(Arrays.asList(nums[i], nums[i + 1], nums[j]));
+                } 
+            }            
+        }
+        return ans;
+    }
+}
