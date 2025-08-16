@@ -57,3 +57,34 @@ class Solution {
         return ans;
     }
 }
+
+// aug - 16: 5:00 ~ 5:10 revised the actual two pointer method, and re-did it. understood it yay
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        // use two pointers
+        List<List<Integer>> ans = new ArrayList();
+        Set<List<Integer>> set = new HashSet();
+        Arrays.sort(nums); // -4, -1, -1, 0, 1, 2
+
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue; // to avoid duplicates (-1 no need)
+            int a = i + 1; // the very next
+            int b = nums.length - 1; // end value
+
+            while (a < b) { // inner loop
+                int sum = nums[i] + nums[a] + nums[b];
+                if (sum == 0 && !set.contains(Arrays.asList(nums[i], nums[a], nums[b]))) {
+                    set.add(Arrays.asList(nums[i], nums[a], nums[b]));
+                    ans.add(Arrays.asList(nums[i], nums[a], nums[b]));
+                    a++;
+                    b--;
+                } else if (sum < 0) { // sum is something negative. bring a up.
+                    a++;
+                } else { // too big. bring b down. 
+                    b--;
+                }         
+            }
+        }
+        return ans;
+    }
+}
