@@ -41,3 +41,33 @@ class Solution {
         return result;
     }
 }
+
+// aug 18 -- 10:10 ~ 10:30 
+
+class Solution {
+    public int maxArea(int[] height) {
+        int area = 0;
+        int start = 0; // start
+        int end = height.length - 1; // end
+        int smaller = 0;
+        int formula = 0;
+
+        while (start < end) {
+            if (height[start] < height[end]) {
+                smaller = height[start];
+            } else {
+                smaller = height[end];
+            }
+            formula = (end - start) * smaller;
+            area = Math.max(area, formula);
+
+            if (height[start] < height[end]) {
+                start++;
+            } else {
+                end--;
+            }
+        }
+
+        return area;
+    }
+}
