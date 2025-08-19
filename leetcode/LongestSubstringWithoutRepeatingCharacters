@@ -17,3 +17,29 @@ class Solution {
         return count;
     }
 }
+
+// like, this method wouldn't work if letter is more than just alphabet.
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s.length() == 0 || s.length() == 1) return s.length();
+        if (s.contains(" ")) return ;
+        boolean[] check = new boolean[26];
+        int left = 0;
+        int right = 0;
+        int ans = 0;
+
+        while (right < s.length()) {
+            char c = s.charAt(right);
+            while (check[c - 'a'] == true) {
+                check[s.charAt(left) - 'a'] = false; // set it as false
+                left++;
+            }
+
+            check[c - 'a'] = true; // set the value as true. then advance right
+
+            ans = Math.max(ans, right - left + 1);
+            right++;
+        }
+        return ans;
+    }
+}
