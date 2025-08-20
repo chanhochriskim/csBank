@@ -5,7 +5,7 @@ Days
 --
 1. Sliding Window & Hash (Arrays / Strings)
 ` [solved, aug 19] longest substring without repeating characters (reported!)
-` subarray sum equals k (prefix sum & hashmap)
+` [solved, aug 20] subarray sum equals k (prefix sum & hashmap)
 
 3. Intervals / Sorting / Heaps
 ` merge intervals (sort & sweep)
