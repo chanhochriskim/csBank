@@ -8,8 +8,8 @@ Days
 ` [solved, aug 20] subarray sum equals k (prefix sum & hashmap)
 
 3. Intervals / Sorting / Heaps
-` [solved, aug 21] merge intervals (sort & sweep) --> JPMorganChase Question!! 
-` meeting rooms ii (min-heap of end times)
+` [solved, aug 21] Merge intervals (sort & sweep) --> JPMorganChase Question!! 
+` [solved, aug 22] Minimum Number of Arrows to Burst Balloons
 
 5. Stacks & Deques
 ` daily temperatures (monotonic stack)
