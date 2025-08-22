@@ -8,7 +8,7 @@ Days
 ` [solved, aug 20] subarray sum equals k (prefix sum & hashmap)
 
 3. Intervals / Sorting / Heaps
-` merge intervals (sort & sweep)
+` [solved, aug 21] merge intervals (sort & sweep) --> JPMorganChase Question!! 
 ` meeting rooms ii (min-heap of end times)
 
 5. Stacks & Deques
