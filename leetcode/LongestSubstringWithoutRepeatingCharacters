@@ -65,3 +65,31 @@ class Solution {
         return ans;
     }
 }
+
+
+// sep 3 (salesforce prep)
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int count = 0;
+        if (s.length() == 0) return 0;
+
+        int i = 0;
+        Set set = new HashSet();
+
+        for (int j = 0; j < s.length(); j++) {
+            if (set.contains(s.charAt(j))) {
+                while (s.charAt(i) != s.charAt(j)) {
+                    set.remove(s.charAt(i));
+                    i++;
+                }
+                set.remove(s.charAt(i));
+                i++;
+            }
+            set.add(s.charAt(j));
+            count = Math.max(count, set.size());
+        }
+
+
+        return count;
+    }
+}
