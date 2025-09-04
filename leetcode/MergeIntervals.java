@@ -31,3 +31,33 @@ class Solution {
         return ans.toArray(new int[ans.size()][]);
     }
 }
+
+
+// sep 4 -- salesforce prep 
+
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        List<int[]> ans = new ArrayList();
+        ans.add(intervals[0]); // [1,3]
+
+        for (int i = 1; i < intervals.length; i++) {
+            // curr & last 
+            int[] last = ans.get(ans.size() - 1); // get the last avaiable one  
+            int[] curr = intervals[i]; // [2,6]
+
+            if (last[1] >= curr[0]) {
+                // tail is eqal or greater than head of curr. merge it.
+                last[1] = Math.max(last[1], curr[1]);
+            } else {
+                // independent. add to ans.
+                ans.add(intervals[i]);
+            }
+        }
+
+        return ans.toArray(new int[ans.size()][]);
+
+    }
+}
+
+
