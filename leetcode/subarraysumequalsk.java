@@ -28,3 +28,31 @@ class Solution {
         return result;
     }
 }
+
+// sep 9
+class Solution {
+    public int subarraySum(int[] nums, int k) {
+        // prefixsum. --> if prefixsum - k: get the frequency. if equal, increment by 1.
+
+        int prefix = 0;
+        int ans = 0;
+        HashMap<Integer, Integer> freq = new HashMap();
+
+        for (int i = 0; i < nums.length; i++) {
+            prefix += nums[i];
+
+            if (freq.containsKey(prefix - k)) {
+                // have seen it before
+                ans += freq.get(prefix - k);
+            }
+
+            if (prefix == k) {
+                ans++;
+            }
+
+            freq.put(prefix, freq.getOrDefault(prefix, 0) + 1);
+        }
+
+        return ans;   
+    }
+}
