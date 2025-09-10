@@ -38,3 +38,39 @@ class Solution {
         return right - left - 1; // "racecar" --> 7 - (-1) - 1 = 7. 
     }
 }
+
+// sep 10
+class Solution {
+    public String longestPalindrome(String s) {
+        int start = 0;
+        int end = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            //--> start form very beginning, then it will go through.
+            int odd = expandfrommiddle(s, i, i); // odd racecar // the very middle one will not have anything identical so.
+            int even = expandfrommiddle(s, i, i+1); // even aabbaa  
+
+            int len = Math.max(odd, even); // actual length 
+
+            if (len > start + end) { // if len is bigger,
+                // gotta update the start & end part accordingly.
+                start = i - ((len - 1) / 2); // racecar --> 3 - (3) = 0
+                end = i + (len / 2); // 3 + 3 = 6.
+            }
+        }
+
+        return s.substring(start, end + 1); // 0, 6 + 1 --> ans = racecar.
+    }
+
+    public int expandfrommiddle(String s, int left, int right) {
+        // returns # of how much. 
+        if (s == null || left > right) return 0;
+
+        while (left >= 0 && right <= s.length() - 1 && s.charAt(left) == s.charAt(right)) {
+            left--;
+            right++;
+        }
+
+        return right - left - 1; // 7 - (-1) - 1 = 7.
+    }
+}
