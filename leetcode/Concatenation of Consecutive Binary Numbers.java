@@ -28,3 +28,29 @@ class Solution {
         return ans;
     }
 }
+
+// bit manipulation method 
+// sep 11 --> bit manipulation method
+
+class Solution {
+    public int concatenatedBinary(int n) {
+        final long modulo = (long) (1e9 + 7);
+        long result = 0;
+
+        int binaryDigit = 0; // indicates # of binarydigits we need to shift left. <<
+
+        for (int i = 1; i <= n; i++) {
+
+            // if it's power of 2 --> every power of 2, we need 1 additional digit.
+            if ((i & (i - 1)) == 0) {
+                binaryDigit++; 
+            }
+
+            result = ((result << binaryDigit) + i) % modulo; 
+        }
+        
+
+
+        return (int) result;
+    }
+}
