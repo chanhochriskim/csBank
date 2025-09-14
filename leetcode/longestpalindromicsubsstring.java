@@ -74,3 +74,38 @@ class Solution {
         return right - left - 1; // 7 - (-1) - 1 = 7.
     }
 }
+
+// sep 13 -- problem was the if (len >.. part)
+
+class Solution {
+    public String longestPalindrome(String s) {
+        if (s.length() == 1) return s;
+        int start = 0;
+        int end = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            int even = length(s, i, i + 1); // aabbaa
+            int odd = length(s, i, i); // racecar
+
+            int len = Math.max(even, odd); // get whatever the right value.
+
+            if (len > (end - start + 1)) { // <-- *problem was i was doing len > end + start, instead of getting accurate length.
+                // if len is greater, re-adjust the 
+                start = i - ((len - 1) / 2); // 3 - ((7 - 1) / 2) = 0
+                end = i + (len / 2); // 3 + (7 / 2 + 1) = 6 + 1;
+            }
+        } 
+        return s.substring(start, end + 1);
+    }
+
+
+    // helper that gets the length of each
+    public static int length(String s, int left, int right) {
+        while (left >= 0 && right <= s.length() - 1 && s.charAt(left) == s.charAt(right)) {
+            left--;
+            right++;
+        }
+
+        return right - left - 1; // 7 - (-1) - 1 = 7.
+    }
+}
