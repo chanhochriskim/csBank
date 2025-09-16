@@ -36,3 +36,36 @@ class Solution {
         return longest;
     }
 }
+
+// sep 16 
+/* intuition -->
+1. use int[] count to keep track of each alphabet. 
+2. then, if window gets too big to handle the other letters, 
+3. shift the left to keep the proper window. 
+
+*/
+
+class Solution {
+    public int characterReplacement(String s, int k) {
+        int left = 0; // window
+        int maxChecker = 0; // k checker
+        int res = 0; // max answer
+
+        int[] count = new int[26]; // a ~ b letter count. 
+
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'A']++; // increment the count.
+            maxChecker = Math.max(maxChecker, count[s.charAt(i) - 'A']); // get the current most valued letter. ex: AABABBA --> 4th, B. A = 3, B = 2. so max = 3. 
+
+            while ((i - left + 1 - maxChecker) > k) { // 3 > 2, we can't handle all.
+                // shift left
+                count[s.charAt(left) - 'A']--; 
+                left++; // shift left to the right
+            }
+
+            res = Math.max(res, i - left + 1);
+        }
+
+        return res;
+    }
+}
