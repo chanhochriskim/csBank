@@ -41,3 +41,45 @@ class Solution {
         curr.next = null;
     }
 }
+
+// sep 26. stack, upto half, zigzag.
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public void reorderList(ListNode head) {
+        if (head == null || head.next == null) return;
+        // stack method
+        // 1. put everything inside stack.
+        // 2. using loop until half the stack count, zig zag. 
+        ListNode curr = head;
+        Stack<ListNode> stack = new Stack();
+        int count = 0;
+
+        // stack prep.
+        while (curr != null) {
+            stack.add(curr);
+            curr = curr.next;
+            count++;
+        }
+        curr = head; // should be bakc to head from the end. (cuz we are reusing it)
+
+        // zigzag.
+        for (int i = 0; i < count/2; i++) {
+            ListNode next = curr.next;
+            ListNode last = stack.pop();
+            curr.next = last;
+            last.next = next;
+            curr = next; 
+        }
+
+        curr.next = null;
+    }
+}
