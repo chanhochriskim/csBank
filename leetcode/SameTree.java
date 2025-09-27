@@ -1,4 +1,8 @@
-// ~ 5 min. my prev answer popped up lol
+// sep 27
+/*
+- first check if both are null (both reached end without error. true.)
+- if only one of them are null OR value doens't match --> false.
+*/
 
 /**
  * Definition for a binary tree node.
@@ -17,13 +21,11 @@
  */
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        return dfs(p, q);
-    }
-
-    public boolean dfs(TreeNode p, TreeNode q) {
-        if (p == null && q == null) return true;
+        if (p == null && q == null) {
+            return true;
+        }
         if ((p == null || q == null) || p.val != q.val) return false;
 
-        return dfs(p.left, q.left) && dfs(p.right, q.right);
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }
