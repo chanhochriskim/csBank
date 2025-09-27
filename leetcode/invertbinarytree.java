@@ -1,4 +1,10 @@
-// only took about 5 min using recursive way, but had to ask chat :\
+// sep 27 
+/*
+- for tree problem, basically using temp value, to flip left and right.
+- then, recursively call the function, with func(root.left) and func(root.right)
+
+
+*/
 
 /**
  * Definition for a binary tree node.
@@ -19,12 +25,12 @@ class Solution {
     public TreeNode invertTree(TreeNode root) {
         if (root == null) return null;
 
-        TreeNode temp = root.left;
-        root.left = root.right;
-        root.right = temp;
+        TreeNode temp = root.left; // 2
+        root.left = root.right; // root.left = 7
+        root.right = temp; // root.right = 2
 
         invertTree(root.left);
-        invertTree(root.right);
+        invertTree(root.right); 
 
         return root;
     }
