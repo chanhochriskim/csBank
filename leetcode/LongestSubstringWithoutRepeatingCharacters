@@ -131,3 +131,33 @@ class Solution {
         return ans;
     }
 }
+
+
+// oct 19, 12:15am (late night code sesh) ~ 
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s.length() == 0) return 0;
+        int ans = 0;
+
+        int left = 0;
+
+        int[] map = new int[128]; // standard ascii length
+        Arrays.fill(map, 0);
+        
+        for (int right = 0; right < s.length(); right++) {
+            if (map[s.charAt(right)] == 1) {
+                // bad
+                while (map[s.charAt(right)] != 0) {
+                    map[s.charAt(left)]--;
+                    left++; // adjust window until everything within map is valid.
+                    
+                }
+            } 
+            map[s.charAt(right)]++; // a: 1 b: 1 c: 1
+            ans = Math.max(ans, right - left + 1); // 3
+        }
+
+        return ans;
+    }
+}
