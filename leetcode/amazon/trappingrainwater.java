@@ -36,3 +36,40 @@ class Solution {
         return water; 
     }
 }
+
+
+
+// oct 18 -- 8:05pm ~ 8:40pm
+
+class Solution {
+    public int trap(int[] height) {
+        int left = 0;
+        int right = height.length - 1;
+
+        int water = 0;
+        int bestLeft = height[left];
+        int bestRight = height[right];
+        while (left < right) {
+            int i = height[left];
+            int j = height[right];
+            if (i < j) {
+                left++;
+                if (height[left] < bestLeft) {
+                    water += bestLeft - height[left];
+                } else {
+                    bestLeft = height[left];
+                }
+            } else {
+                right--;
+                if (height[right] < bestRight) {
+                    water += bestRight - height[right];
+                } else {
+                    bestRight = height[right];
+                }
+            }
+
+        }
+
+        return water;
+    }
+}
