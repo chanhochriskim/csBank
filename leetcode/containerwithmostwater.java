@@ -71,3 +71,28 @@ class Solution {
         return area;
     }
 }
+
+// nov 19 -- 10:20am ~ 10:25am
+/* analysis O(n) / S.C O(1)
+- yk the drill lol (two pointer, lower value moves. update the max if needed)
+*/
+
+class Solution {
+    public int maxArea(int[] height) {
+        int a = 0;
+        int b = height.length - 1;
+        int ans = 0;
+        while (a < b) {
+            int len = b - a;
+            int h = Math.min(height[a], height[b]);
+            ans = Math.max(ans, len * h);
+            if (height[a] < height[b]) {
+                a++;
+            } else {
+                b--;
+            }
+        }
+
+        return ans;
+    }
+}
