@@ -58,3 +58,41 @@ class Solution {
         return ans;
     }
 }
+
+// nov 19 -- 9:55am ~ 10:10am
+/* tl dr; --> for freqmap, i was doing map.put(i) instead of map.put(nums[i]) smh
+1. freqMap (num, freqValue)
+2. bucketSort based on frequency (start at 1 for convenience)
+3. in reverse, get the answers properly.
+*/
+
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1); // [1:3, 2:2, 3:1]
+        }
+
+        List<Integer>[] bucket = new List[nums.length + 1];
+        map.forEach((num, freq) -> { 
+            if (bucket[freq] == null) {
+                bucket[freq] = new ArrayList();
+            }
+            bucket[freq].add(num); // 3 -- 1, 2 -- 2, 1 -- 3
+        });
+
+        List<Integer> ans = new ArrayList();
+        for (int i = bucket.length - 1; i > 0 && ans.size() < k; i--) {
+            if (bucket[i] != null) {
+                ans.addAll(bucket[i]);
+            }
+        }
+
+        int[] result = new int[ans.size()];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = ans.get(i);
+        }
+
+        return result;
+    }
+}
