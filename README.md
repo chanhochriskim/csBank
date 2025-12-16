@@ -1,4 +1,4 @@
-# Blind75 Ultimate Guide.
+# Blind75 Ultimate Guide
 currently solved ones: 37. 
 today's date: Aug 5
 school starts: Aug 25
