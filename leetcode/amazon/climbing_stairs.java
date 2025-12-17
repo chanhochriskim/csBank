@@ -1,11 +1,14 @@
 // dec 16 - 7:15pm ~ 7:30pm
 /* neetcode recursion
+--> we already know # of ways to reach step 0 & 1, we know each step computes using the previous two values.
+
 set 2 variables one / two as 1s.
 looping through until n-1, 
 temp = one // old one value 
 one = two
 two = temp + two. 
 */
+
 
 class Solution {
     public int climbStairs(int n) {
