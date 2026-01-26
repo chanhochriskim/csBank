@@ -1,9 +1,11 @@
-// nov 5 -- 8:30 am ~ 8:50am
+// jan 25 - 9:10pm ~ 9:20pm
+
 /* 2 pointer analysis
 - pointer a & b.
 - compare pointer sizes, move the one that's smaller.
 - very trivial after that
 */
+
 class Solution {
     public int trap(int[] height) {
         int a = 0;
@@ -15,9 +17,9 @@ class Solution {
         while (a < b) {
             if (height[a] < height[b]) {
                 a++;
-                if (height[a] < bestA) { // water trap
+                if (height[a] < bestA) {
                     water += bestA - height[a];
-                } else { // no trapping water. update bestA
+                } else {
                     bestA = height[a];
                 }
             } else {
@@ -29,7 +31,6 @@ class Solution {
                 }
             }
         }
-
 
         return water;
     }
