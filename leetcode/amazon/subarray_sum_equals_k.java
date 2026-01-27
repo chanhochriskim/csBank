@@ -1,5 +1,9 @@
 // jan 27 - 1:25pm ~ 2:00pm lowkey took a hot minute to understand intuition behind smh 
-
+/* 
+When you’re at i, map[prefix-k] counts how many earlier places you could “start after” 
+so that the subarray ending at i sums to k. 
+In this case, the earlier place is index 1, so the subarray starts at 2, which is [3].
+*/
 class Solution {
     public int subarraySum(int[] nums, int k) {
         int prefix = 0;
